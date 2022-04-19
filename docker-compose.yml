@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  prod:
+    image: idcardpytesseract/idcardpytesseract:latest-prod
+    working_dir: /production/idcardpytesseract
+    entrypoint: uvicorn main:app --reload --port 80 --host 0.0.0.0
+    build:
+      target: production
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+    - ././production
+    ports:
+      - 80:80
