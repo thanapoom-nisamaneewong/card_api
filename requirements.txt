@@ -19,7 +19,7 @@ opencv-python==4.5.1.48
 python-multipart==0.0.5
 requests==2.25.1
 aiofiles==0.6.0
-Jinja2==2.11.3
+Jinja2==3.0.3
 scikit-image==0.18.1
 pybase64==1.2.1
 
